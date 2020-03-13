@@ -1,4 +1,4 @@
-package com.example.Khaishirt.Model;
+package com.example.Khaishirt.model;
 
 import lombok.Data;
 import org.bson.types.ObjectId;

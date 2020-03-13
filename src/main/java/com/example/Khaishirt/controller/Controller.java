@@ -1,8 +1,7 @@
-package com.example.Khaishirt.Controller;
+package com.example.Khaishirt.controller;
 
-import com.example.Khaishirt.Model.Shirt;
-import com.example.Khaishirt.Repository.ShirtRepository;
-import com.example.Khaishirt.Service.ShirtService;
+import com.example.Khaishirt.model.Shirt;
+import com.example.Khaishirt.service.ShirtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

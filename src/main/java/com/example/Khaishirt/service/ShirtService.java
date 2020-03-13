@@ -1,10 +1,9 @@
-package com.example.Khaishirt.Service;
+package com.example.Khaishirt.service;
 
-import com.example.Khaishirt.Model.Shirt;
-import com.example.Khaishirt.Repository.ShirtRepository;
+import com.example.Khaishirt.model.Shirt;
+import com.example.Khaishirt.repository.ShirtRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
