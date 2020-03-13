@@ -2,6 +2,7 @@ package com.example.Khaishirt.Controller;
 
 import com.example.Khaishirt.Model.Shirt;
 import com.example.Khaishirt.Repository.ShirtRepository;
+import com.example.Khaishirt.Service.ShirtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +13,7 @@ import java.util.List;
 public class Controller {
 
     @Autowired // เป็นการสร้าง obj เหมือนการ new
-    ShirtRepository shirtRepository;
+            ShirtService shirtService;
 
     @RequestMapping("/test") //annotation นี้จะทำให้ class นี้กลายเป็น RestController
     public String Hello(){
@@ -20,7 +21,8 @@ public class Controller {
     }
 
     @RequestMapping("/data")
-    public List<Shirt> getData(){
-        return shirtRepository.findAll(); // get all data
+    public List<Shirt> getData() {
+
+        return shirtService.getData(); // get all data
     }
 }
